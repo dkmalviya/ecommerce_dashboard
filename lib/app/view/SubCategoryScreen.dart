@@ -114,14 +114,7 @@ class _SubCategoryScreenState extends State<SubCategoryScreen> {
                               decoration: BoxDecoration(
                                   color: hexToColor("#B5AAE1"),
                                   borderRadius: BorderRadius.circular(25),
-                                  gradient: LinearGradient(
-                                      begin: Alignment.bottomRight,
-                                      end: Alignment.topLeft,
-                                      colors: [
-                                        hexToColor("#6ae7a7"),
-                                        hexToColor("#15bf9e"),
-                                      ]
-                                  ),
+                                  gradient: linearGradient,
                                   boxShadow: customDarkShadow
                               ),
                               child: Center(

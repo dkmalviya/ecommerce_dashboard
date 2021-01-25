@@ -41,10 +41,7 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
       elevation: 0,
       flexibleSpace: Container(
         decoration: BoxDecoration(
-            gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: <Color>[hexToColor("#6ae7a7"), hexToColor("#15bf9e")])),
+            gradient: linearGradient),
       ),
     );
   }

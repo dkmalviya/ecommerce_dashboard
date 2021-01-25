@@ -12,13 +12,7 @@ class DrawerMenu extends StatelessWidget {
         children: <Widget>[
           UserAccountsDrawerHeader(
             decoration: BoxDecoration(
-                gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-
-                    colors: <Color>[hexToColor("#6ae7a7"), hexToColor("#15bf9e")]
-
-                )
+                gradient: linearGradient
             ),
             accountEmail: Text("deepeshmalviya@outlook.com"),
             accountName: Text("Deepesh Malviya"),
