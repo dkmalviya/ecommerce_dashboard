@@ -11,6 +11,7 @@ class ProductDetailsModel {
   String subCategoryId;
   int categoryId;
 
+
   ProductDetailsModel(
       this.productId,
       this.name,
@@ -22,6 +23,17 @@ class ProductDetailsModel {
       this.price,
       this.subCategoryId,
       this.categoryId);
+
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is ProductDetailsModel &&
+          runtimeType == other.runtimeType &&
+          productId == other.productId;
+
+  @override
+  int get hashCode => productId.hashCode;
 
   @override
   String toString() {

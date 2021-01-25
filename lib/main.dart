@@ -10,7 +10,7 @@ void main() {
 class MyApp extends StatefulWidget {
 
 
-  static List<ProductDetailsModel> cartList=List();
+  static Set<ProductDetailsModel> cartList=Set();
   @override
   _MyAppState createState() => _MyAppState();
 }

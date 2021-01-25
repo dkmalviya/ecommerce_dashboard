@@ -1,8 +1,11 @@
 import 'package:e_commerce_dashboard/app/view/Dashboard.dart';
+import 'package:e_commerce_dashboard/app/view/OrderSummary.dart';
 import 'package:e_commerce_dashboard/app/view/ProductDetailsScreen.dart';
 import 'package:e_commerce_dashboard/app/view/SplashScreen.dart';
 import 'package:e_commerce_dashboard/app/view/SubCategoryScreen.dart';
 import 'package:flutter/material.dart';
+
+import '../view/AddToCartScreen.dart';
 
 class RouteGenerator{
   static Route<dynamic> generateRoute(RouteSettings routeSettings){
@@ -20,6 +23,13 @@ class RouteGenerator{
       case '/product_details':
         final args=routeSettings.arguments;
         return MaterialPageRoute(builder: (_)=>ProductDetailsScreen(args));
+
+      case '/add_to_cart':
+
+        return MaterialPageRoute(builder: (_)=>AddToCartScreen());
+
+      case '/order_summary':
+        return MaterialPageRoute(builder: (_)=>OrderSummary());
 
 
 

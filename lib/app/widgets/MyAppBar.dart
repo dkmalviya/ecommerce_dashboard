@@ -35,7 +35,10 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
                 Icons.shopping_cart,
                 color: Colors.black,
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushNamed("/add_to_cart");
+
+              },
             ))
       ],
       elevation: 0,
