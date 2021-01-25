@@ -1,0 +1,452 @@
+[
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00000e",
+    "subcategoryName": "tea",
+    "categoryId": 101
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00000f",
+    "subcategoryName": "coffee",
+    "categoryId": 101
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000010",
+    "subcategoryName": "juice",
+    "categoryId": 101
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000011",
+    "subcategoryName": "soda",
+    "categoryId": 101
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000012",
+    "subcategoryName": "Cold Drinks",
+    "categoryId": 101
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000013",
+    "subcategoryName": "Sandwich Bread",
+    "categoryId": 102
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000014",
+    "subcategoryName": "Sweet Bread",
+    "categoryId": 102
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000015",
+    "subcategoryName": "Bun",
+    "categoryId": 102
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000016",
+    "subcategoryName": "Pav",
+    "categoryId": 102
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000017",
+    "subcategoryName": "cheeses",
+    "categoryId": 103
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000018",
+    "subcategoryName": "eggs",
+    "categoryId": 103
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000019",
+    "subcategoryName": "milk",
+    "categoryId": 103
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00001a",
+    "subcategoryName": "yogurt",
+    "categoryId": 103
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00001b",
+    "subcategoryName": "butter",
+    "categoryId": 103
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00001c",
+    "subcategoryName": "Butter Milk",
+    "categoryId": 103
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00001d",
+    "subcategoryName": "Paneer",
+    "categoryId": 103
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00001e",
+    "subcategoryName": "Frozen peas",
+    "categoryId": 104
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00001f",
+    "subcategoryName": "Frozen paratha ",
+    "categoryId": 104
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000020",
+    "subcategoryName": "Mixed vegetables ",
+    "categoryId": 104
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000021",
+    "subcategoryName": "Frozen corn",
+    "categoryId": 104
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000022",
+    "subcategoryName": "Patato",
+    "categoryId": 105
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000023",
+    "subcategoryName": "Onion",
+    "categoryId": 105
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000024",
+    "subcategoryName": "ta",
+    "categoryId": 105
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000025",
+    "subcategoryName": "pasta",
+    "categoryId": 105
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000026",
+    "subcategoryName": "mixes",
+    "categoryId": 105
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000027",
+    "subcategoryName": "Dish washing soap ",
+    "categoryId": 106
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000028",
+    "subcategoryName": "Washing machine Ditergent",
+    "categoryId": 106
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000029",
+    "subcategoryName": "Flour cleaner ",
+    "categoryId": 106
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00002a",
+    "subcategoryName": "Glass cleaner",
+    "categoryId": 106
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00002b",
+    "subcategoryName": "toilet cleaners ",
+    "categoryId": 106
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00002c",
+    "subcategoryName": "Room fresher",
+    "categoryId": 106
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00002d",
+    "subcategoryName": "Aroma oil ",
+    "categoryId": 106
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00002e",
+    "subcategoryName": "Garbage bags ",
+    "categoryId": 106
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00002f",
+    "subcategoryName": "Dis-infectent ",
+    "categoryId": 106
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000030",
+    "subcategoryName": "Toilet paper roll",
+    "categoryId": 106
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000031",
+    "subcategoryName": "Sponges scrubs and foam ",
+    "categoryId": 106
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000032",
+    "subcategoryName": "Shampoo",
+    "categoryId": 107
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000033",
+    "subcategoryName": "Conditioner",
+    "categoryId": 107
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000034",
+    "subcategoryName": "Soap",
+    "categoryId": 107
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000035",
+    "subcategoryName": "Toothpaste",
+    "categoryId": 107
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000036",
+    "subcategoryName": "Dental Floss",
+    "categoryId": 107
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000037",
+    "subcategoryName": "Mouth wash",
+    "categoryId": 107
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000038",
+    "subcategoryName": "shaving cream",
+    "categoryId": 107
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000039",
+    "subcategoryName": "Rajor",
+    "categoryId": 107
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00003a",
+    "subcategoryName": "tooth brush",
+    "categoryId": 107
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00003b",
+    "subcategoryName": "ear buds",
+    "categoryId": 107
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00003c",
+    "subcategoryName": "Moisturiser ",
+    "categoryId": 107
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00003d",
+    "subcategoryName": "Body lotion",
+    "categoryId": 107
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00003e",
+    "subcategoryName": "Coriander (Dhaniya)",
+    "categoryId": 108
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00003f",
+    "subcategoryName": "Mustard (Sarso)  Seeds",
+    "categoryId": 108
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000040",
+    "subcategoryName": "Fenugreek(Sauf) Seeds",
+    "categoryId": 108
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000041",
+    "subcategoryName": "Peppercorns",
+    "categoryId": 108
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000042",
+    "subcategoryName": "Cumin ",
+    "categoryId": 108
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000043",
+    "subcategoryName": "Red Chillies powder",
+    "categoryId": 108
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000044",
+    "subcategoryName": "Kashmiri red chilli",
+    "categoryId": 108
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000045",
+    "subcategoryName": "Tamarind",
+    "categoryId": 108
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000046",
+    "subcategoryName": "salt",
+    "categoryId": 108
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000047",
+    "subcategoryName": "asafoetida",
+    "categoryId": 108
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000048",
+    "subcategoryName": "sesame ",
+    "categoryId": 108
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000049",
+    "subcategoryName": "Turmeric ",
+    "categoryId": 108
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00004a",
+    "subcategoryName": "Baking ",
+    "categoryId": 108
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00004b",
+    "subcategoryName": "Cardamom",
+    "categoryId": 108
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00004c",
+    "subcategoryName": "Cinnamon ",
+    "categoryId": 108
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00004d",
+    "subcategoryName": "Carom seeds ",
+    "categoryId": 108
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00004e",
+    "subcategoryName": "Dry ginger",
+    "categoryId": 108
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00004f",
+    "subcategoryName": "Black pepper corns",
+    "categoryId": 108
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000050",
+    "subcategoryName": "Vinegar ",
+    "categoryId": 108
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000051",
+    "subcategoryName": "Nutmeg",
+    "categoryId": 108
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000052",
+    "subcategoryName": "Whole dried red chilli",
+    "categoryId": 108
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000053",
+    "subcategoryName": "Pasta",
+    "categoryId": 109
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000054",
+    "subcategoryName": "Noodles",
+    "categoryId": 109
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000055",
+    "subcategoryName": "Vermicelli ",
+    "categoryId": 109
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000056",
+    "subcategoryName": "Soya chunks ",
+    "categoryId": 109
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000057",
+    "subcategoryName": "cling wraps",
+    "categoryId": 110
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000058",
+    "subcategoryName": "paper plates ",
+    "categoryId": 110
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000059",
+    "subcategoryName": "Aluminium foil ",
+    "categoryId": 110
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00005a",
+    "subcategoryName": "Ziplock bag ",
+    "categoryId": 110
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00005b",
+    "subcategoryName": "cling wraps",
+    "categoryId": 110
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00005c",
+    "subcategoryName": "Toothpicks",
+    "categoryId": 110
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00005d",
+    "subcategoryName": "Rice",
+    "categoryId": 111
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00005e",
+    "subcategoryName": "OIL",
+    "categoryId": 111
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b00005f",
+    "subcategoryName": "Dryfruits",
+    "categoryId": 111
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000060",
+    "subcategoryName": "Ghree",
+    "categoryId": 111
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000061",
+    "subcategoryName": "Poha",
+    "categoryId": 111
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000062",
+    "subcategoryName": "Flour",
+    "categoryId": 111
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000063",
+    "subcategoryName": "Maggie",
+    "categoryId": 111
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000064",
+    "subcategoryName": "Sugar",
+    "categoryId": 111
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000065",
+    "subcategoryName": "Orange",
+    "categoryId": 112
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000066",
+    "subcategoryName": "Mango",
+    "categoryId": 112
+  },
+  {
+    "subCategoryId": "5ff0b509fc13ae631b000067",
+    "subcategoryName": "Apple",
+    "categoryId": 112
+  }
+]

@@ -1,0 +1,64 @@
+[
+  {
+    "categoryId": "101",
+    "title": "Beverages",
+    "categoryImage": "assets/images/app_icon.png"
+  },
+  {
+    "categoryId": "102",
+    "title": "Bread/Bakery",
+    "categoryImage": "assets/images/app_icon.png"
+  },
+  {
+    "categoryId": "103",
+    "title": "Frozen Foods",
+    "categoryImage": "assets/images/app_icon.png"
+  },
+  {
+    "categoryId": "104",
+    "title": "Dairy",
+    "categoryImage": "assets/images/app_icon.png"
+  },
+  {
+    "categoryId": "105",
+    "title": "Vegitables",
+    "categoryImage": "assets/images/app_icon.png"
+  },
+  {
+    "categoryId": "106",
+    "title": "Cleaners",
+    "categoryImage": "assets/images/app_icon.png"
+  },
+  {
+    "categoryId": "107",
+    "title": "Personal Care",
+    "categoryImage": "assets/images/app_icon.png"
+  },
+  {
+    "categoryId": "108",
+    "title": "Spices",
+    "categoryImage": "assets/images/app_icon.png"
+  },
+  {
+    "categoryId": "109",
+    "title": "Instant Food",
+    "categoryImage": "assets/images/app_icon.png"
+  },
+  {
+    "categoryId": "110",
+    "title": "Disposables",
+    "categoryImage": "assets/images/app_icon.png"
+  },
+  {
+    "categoryId": "111",
+    "title": "Grocery",
+    "categoryImage": "assets/images/app_icon.png"
+  },
+  {
+    "categoryId": "112",
+    "title": "Fruits",
+    "categoryImage": "assets/images/app_icon.png"
+  }
+]
+
+
