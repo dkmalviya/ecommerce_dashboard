@@ -36,7 +36,6 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
           child: Stack(
             alignment: Alignment.center,
             children: [
-              Icon(Icons.shopping_cart, color: Colors.black),
               _buildChild()
 
 
@@ -59,45 +58,55 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
 
   Widget _buildChild() {
     if (MyApp.cartList.length>0) {
-      return Padding(padding: const EdgeInsets.only(left: 5.0),
-         child: Container(
-          width: 30,
-          height: 30,
-          child: Stack(
-            children: [
-              Icon(
-                Icons.shopping_cart,
-                color: Colors.black,
-                size: 35,
-              ),
-              Container(
-                width: 30,
-                height: 30,
-                alignment: Alignment.topRight,
-                child: Container(
-                  width: 15,
-                  height: 15,
-                  decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: Color(0xffc32c37),
-                      border: Border.all(color: Colors.white, width: 1)),
-                  child: Padding(
-                    padding: const EdgeInsets.all(0.0),
-                    child: Center(
-                      child: Text(
-                        MyApp.cartList.length.toString(),
-                        style: TextStyle(fontSize: 10),
+      return
+
+        Row(
+          children: [
+
+            Padding(padding: const EdgeInsets.only(left: 15.0,right: 10),
+             child: Container(
+              width: 35,
+              height: 35,
+              child: Stack(
+                children: [
+                  Icon(
+                    Icons.shopping_cart,
+                    color: Colors.limeAccent,
+                    size: 35,
+                  ),
+                  Container(
+                    width: 32,
+                    height: 30,
+                    alignment: Alignment.topRight,
+                    child: Container(
+                      width: 15,
+                      height: 15,
+                      decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Color(0xffc32c37),
+                          border: Border.all(color: Colors.white, width: 1)),
+                      child: Padding(
+                        padding: const EdgeInsets.all(0.0),
+                        child: Center(
+                          child: Text(
+                            MyApp.cartList.length.toString(),
+                            style: TextStyle(fontSize: 10),
+                          ),
+                        ),
                       ),
                     ),
                   ),
-                ),
+                ],
               ),
-            ],
-          ),
-       ));
+       )),
+          ],
+        );
     }
     else{
-      return null;
+      return Padding(
+        padding: const EdgeInsets.only(left: 15.0,right: 10),
+        child: Icon(Icons.shopping_cart, color: Colors.limeAccent,size: 35,),
+      );
     }
 
   }

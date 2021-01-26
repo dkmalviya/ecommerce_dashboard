@@ -1,9 +1,11 @@
 import 'package:e_commerce_dashboard/app/view/Dashboard.dart';
 import 'package:e_commerce_dashboard/app/view/OrderSummary.dart';
 import 'package:e_commerce_dashboard/app/view/ProductDetailsScreen.dart';
-import 'package:e_commerce_dashboard/app/view/SplashScreen.dart';
+import 'package:e_commerce_dashboard/app/view/ProfileScreen.dart';
 import 'package:e_commerce_dashboard/app/view/SubCategoryScreen.dart';
 import 'package:e_commerce_dashboard/app/view/UpdateAddress.dart';
+import 'package:e_commerce_dashboard/app/view/prelogin_screen/IntroductionScreen.dart';
+import 'package:e_commerce_dashboard/app/view/prelogin_screen/SplashScreen.dart';
 import 'package:flutter/material.dart';
 
 import '../view/AddToCartScreen.dart';
@@ -14,6 +16,13 @@ class RouteGenerator{
     switch(routeSettings.name){
       case '/':
         return MaterialPageRoute(builder: (_)=> SplashScreen());
+        break;
+
+      case '/introduction':
+        return MaterialPageRoute(builder: (_)=> IntroductionScreen());
+
+        break;
+
       case '/dashboard':
         return MaterialPageRoute(builder: (_)=>Dashboard());
 
@@ -34,6 +43,11 @@ class RouteGenerator{
 
       case '/update_address':
         return MaterialPageRoute(builder: (_)=>UpdateAddress());
+
+      case '/profile':
+        return MaterialPageRoute(builder: (_)=>ProfileScreen());
+
+
 
 
 

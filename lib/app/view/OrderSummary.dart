@@ -1,10 +1,14 @@
+import 'package:e_commerce_dashboard/app/models/OrderDetailsModel.dart';
 import 'package:e_commerce_dashboard/app/utils/Utils.dart';
 import 'package:e_commerce_dashboard/app/view/UpdateAddress.dart';
+import 'package:e_commerce_dashboard/app/widgets/FailedOrderWidget.dart';
 import 'package:e_commerce_dashboard/app/widgets/MyAppBar.dart';
+import 'package:e_commerce_dashboard/app/widgets/SuccessOrderWidget.dart';
 import 'package:e_commerce_dashboard/main.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:random_string/random_string.dart';
 
 class OrderSummary extends StatefulWidget {
   @override
@@ -17,6 +21,7 @@ class _OrderSummaryState extends State<OrderSummary> {
   String deliveryAddress="NA";
   String contactNumber="0000000000";
   String fullName="XXXXXX XXXX XXXXX";
+  OrderDetailsModel orderDetailsModel=OrderDetailsModel();
 
 
   @override
@@ -31,6 +36,8 @@ class _OrderSummaryState extends State<OrderSummary> {
     paymentMethods.add(Icon(FontAwesomeIcons.ccMastercard,size: 32));
     paymentMethods.add(Icon(FontAwesomeIcons.ccVisa,size: 32));
     loadInitialAddress();
+
+    orderDetailsModel.orderNumber=randomNumeric(5);
 
   }
 
@@ -93,7 +100,7 @@ class _OrderSummaryState extends State<OrderSummary> {
 
             Text(
 
-                "123456789",
+                orderDetailsModel.orderNumber,
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.w300,
@@ -122,7 +129,7 @@ class _OrderSummaryState extends State<OrderSummary> {
 
             Text(
 
-                "12",
+                MyApp.cartList.length.toString(),
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.w300,
@@ -152,7 +159,7 @@ class _OrderSummaryState extends State<OrderSummary> {
 
             Text(
 
-                "\u20B9 12",
+                "\u20B9 ",
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.w300,
@@ -424,6 +431,15 @@ class _OrderSummaryState extends State<OrderSummary> {
               ),
             ),
 
+            onTap: (){
+
+              setState(() {
+                orderDetailsModel.invoiceNumber=randomAlphaNumeric(8);
+              });
+
+              FailedOrderWidget(orderDetailsModel).showAlertDialog(context);
+            //  SuccessOrderWidget(orderDetailsModel).showAlertDialog(context);
+            },
 
           ),
           SizedBox(height: 10,)

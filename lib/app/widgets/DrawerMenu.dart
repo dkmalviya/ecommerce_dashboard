@@ -39,6 +39,7 @@ class DrawerMenu extends StatelessWidget {
             leading: Icon(
                 FontAwesomeIcons.home, color: hexToColor("#15bf9e")),
             onTap: () {
+                Navigator.of(context).popAndPushNamed("/dashboard");
 
             },
           ),
@@ -52,7 +53,7 @@ class DrawerMenu extends StatelessWidget {
               FontAwesomeIcons.shoppingCart, color: hexToColor("#15bf9e"),),
 
             onTap: () {
-              Navigator.of(context).pushNamed("/add_to_cart");
+              Navigator.of(context).popAndPushNamed("/add_to_cart");
             },
           ),
 
@@ -65,7 +66,7 @@ class DrawerMenu extends StatelessWidget {
                 FontAwesomeIcons.firstOrder, color: hexToColor("#15bf9e")),
 
             onTap: () {
-              Navigator.of(context).pushNamed("/my_orders");
+              Navigator.of(context).popAndPushNamed("/my_orders");
             },
           ),
 
@@ -79,7 +80,7 @@ class DrawerMenu extends StatelessWidget {
 
             onTap: () {
 
-              Navigator.of(context).pushNamed("/update_address");
+              Navigator.of(context).popAndPushNamed("/profile");
 
             },
           ),
@@ -93,7 +94,7 @@ class DrawerMenu extends StatelessWidget {
                 FontAwesomeIcons.star, color: hexToColor("#15bf9e")),
 
             onTap: () {
-           //   Navigator.of(context).pushNamed("/favorite");
+           //   Navigator.of(context).popAndPushNamed("/favorite");
             },
           ),
 
@@ -106,7 +107,7 @@ class DrawerMenu extends StatelessWidget {
                 FontAwesomeIcons.questionCircle, color: hexToColor("#15bf9e")),
 
             onTap: () {
-              //Navigator.of(context).pushNamed("/faq");
+              //Navigator.of(context).popAndPushNamed("/faq");
             },
           ),
 
@@ -119,7 +120,7 @@ class DrawerMenu extends StatelessWidget {
                 FontAwesomeIcons.share, color: hexToColor("#15bf9e")),
 
             onTap: () {
-              //Navigator.of(context).pushNamed("/share");
+              //Navigator.of(context).popAndPushNamed("/share");
             },
           ),
 

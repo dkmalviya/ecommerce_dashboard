@@ -1,13 +1,13 @@
 class AddressModel {
-  String addressId;
-  String name;
-  String houseNumber ;
-  String street ;
-  String area ;
-  String landmark ;
-  String city ;
-  String pincode ;
-  String contactNumber ;
+  String addressId="";
+  String name="";
+  String houseNumber="" ;
+  String street="" ;
+  String area="" ;
+  String landmark="" ;
+  String city="" ;
+  String pincode="" ;
+  String contactNumber="" ;
 
 
   AddressModel();
