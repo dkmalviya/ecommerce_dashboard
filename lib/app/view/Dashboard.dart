@@ -64,7 +64,7 @@ class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar:MyAppBar("e-Commerce Demo", false, 0),
+        appBar:MyAppBar("e-Commerce Demo", true, 0),
         drawer: DrawerMenu(),
         body: Container(
             padding: EdgeInsets.only(top: 10),

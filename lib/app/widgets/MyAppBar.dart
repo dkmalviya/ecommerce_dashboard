@@ -1,4 +1,5 @@
 import 'package:e_commerce_dashboard/app/utils/Utils.dart';
+import 'package:e_commerce_dashboard/main.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -30,16 +31,23 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
       actions: [
         Visibility(
             visible: isCartVisible,
-            child: IconButton(
-              icon: Icon(
-                Icons.shopping_cart,
-                color: Colors.black,
-              ),
-              onPressed: () {
-                Navigator.of(context).pushNamed("/add_to_cart");
+            child:
+        GestureDetector(
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              Icon(Icons.shopping_cart, color: Colors.black),
+              _buildChild()
 
-              },
-            ))
+
+
+            ],
+          ),
+          onTap: (){
+            Navigator.of(context).pushNamed("/add_to_cart");
+          },
+        )
+        )
       ],
       elevation: 0,
       flexibleSpace: Container(
@@ -47,6 +55,51 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
             gradient: linearGradient),
       ),
     );
+  }
+
+  Widget _buildChild() {
+    if (MyApp.cartList.length>0) {
+      return Padding(padding: const EdgeInsets.only(left: 5.0),
+         child: Container(
+          width: 30,
+          height: 30,
+          child: Stack(
+            children: [
+              Icon(
+                Icons.shopping_cart,
+                color: Colors.black,
+                size: 35,
+              ),
+              Container(
+                width: 30,
+                height: 30,
+                alignment: Alignment.topRight,
+                child: Container(
+                  width: 15,
+                  height: 15,
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Color(0xffc32c37),
+                      border: Border.all(color: Colors.white, width: 1)),
+                  child: Padding(
+                    padding: const EdgeInsets.all(0.0),
+                    child: Center(
+                      child: Text(
+                        MyApp.cartList.length.toString(),
+                        style: TextStyle(fontSize: 10),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+       ));
+    }
+    else{
+      return null;
+    }
+
   }
 
   @override

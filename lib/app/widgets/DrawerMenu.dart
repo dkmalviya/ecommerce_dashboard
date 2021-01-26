@@ -52,7 +52,7 @@ class DrawerMenu extends StatelessWidget {
               FontAwesomeIcons.shoppingCart, color: hexToColor("#15bf9e"),),
 
             onTap: () {
-
+              Navigator.of(context).pushNamed("/add_to_cart");
             },
           ),
 
@@ -65,7 +65,7 @@ class DrawerMenu extends StatelessWidget {
                 FontAwesomeIcons.firstOrder, color: hexToColor("#15bf9e")),
 
             onTap: () {
-
+              Navigator.of(context).pushNamed("/my_orders");
             },
           ),
 
@@ -79,6 +79,8 @@ class DrawerMenu extends StatelessWidget {
 
             onTap: () {
 
+              Navigator.of(context).pushNamed("/update_address");
+
             },
           ),
 
@@ -91,7 +93,7 @@ class DrawerMenu extends StatelessWidget {
                 FontAwesomeIcons.star, color: hexToColor("#15bf9e")),
 
             onTap: () {
-
+           //   Navigator.of(context).pushNamed("/favorite");
             },
           ),
 
@@ -104,7 +106,7 @@ class DrawerMenu extends StatelessWidget {
                 FontAwesomeIcons.questionCircle, color: hexToColor("#15bf9e")),
 
             onTap: () {
-
+              //Navigator.of(context).pushNamed("/faq");
             },
           ),
 
@@ -117,7 +119,7 @@ class DrawerMenu extends StatelessWidget {
                 FontAwesomeIcons.share, color: hexToColor("#15bf9e")),
 
             onTap: () {
-
+              //Navigator.of(context).pushNamed("/share");
             },
           ),
 

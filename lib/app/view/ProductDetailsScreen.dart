@@ -304,7 +304,10 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
                                                 }
 
                                                 if(!MyApp.cartList.contains(p)){
-                                                  MyApp.cartList.add(p);
+                                                  setState(() {
+                                                    MyApp.cartList.add(p);
+
+                                                  });
                                                   MyToast(context).showSuccessToast("${p.name} added Successfully");
 
                                                 }

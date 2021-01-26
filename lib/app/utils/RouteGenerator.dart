@@ -3,6 +3,7 @@ import 'package:e_commerce_dashboard/app/view/OrderSummary.dart';
 import 'package:e_commerce_dashboard/app/view/ProductDetailsScreen.dart';
 import 'package:e_commerce_dashboard/app/view/SplashScreen.dart';
 import 'package:e_commerce_dashboard/app/view/SubCategoryScreen.dart';
+import 'package:e_commerce_dashboard/app/view/UpdateAddress.dart';
 import 'package:flutter/material.dart';
 
 import '../view/AddToCartScreen.dart';
@@ -30,6 +31,9 @@ class RouteGenerator{
 
       case '/order_summary':
         return MaterialPageRoute(builder: (_)=>OrderSummary());
+
+      case '/update_address':
+        return MaterialPageRoute(builder: (_)=>UpdateAddress());
 
 
 

@@ -1,5 +1,7 @@
 import 'package:e_commerce_dashboard/app/utils/Utils.dart';
+import 'package:e_commerce_dashboard/app/view/UpdateAddress.dart';
 import 'package:e_commerce_dashboard/app/widgets/MyAppBar.dart';
+import 'package:e_commerce_dashboard/main.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -12,6 +14,11 @@ class OrderSummary extends StatefulWidget {
 class _OrderSummaryState extends State<OrderSummary> {
   List<Icon> paymentMethods = List();
 
+  String deliveryAddress="NA";
+  String contactNumber="0000000000";
+  String fullName="XXXXXX XXXX XXXXX";
+
+
   @override
   void initState() {
     // TODO: implement initState
@@ -23,6 +30,25 @@ class _OrderSummaryState extends State<OrderSummary> {
     paymentMethods.add(Icon(FontAwesomeIcons.applePay,size: 32));
     paymentMethods.add(Icon(FontAwesomeIcons.ccMastercard,size: 32));
     paymentMethods.add(Icon(FontAwesomeIcons.ccVisa,size: 32));
+    loadInitialAddress();
+
+  }
+
+
+  loadInitialAddress(){
+
+      deliveryAddress =MyApp.deliveryAddress.houseNumber + ","+
+          MyApp.deliveryAddress.street + ","+
+          MyApp.deliveryAddress.area + ",\n"+
+          MyApp.deliveryAddress.city + ","+
+          MyApp.deliveryAddress.pincode + ",\nLandmark :"+
+          MyApp.deliveryAddress.landmark ;
+
+      fullName=MyApp.deliveryAddress.name;
+      contactNumber=MyApp.deliveryAddress.contactNumber;
+
+
+
   }
 
   @override
@@ -143,6 +169,7 @@ class _OrderSummaryState extends State<OrderSummary> {
     final contactInformationSection=Column(
       children: [
         Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
 
@@ -154,6 +181,39 @@ class _OrderSummaryState extends State<OrderSummary> {
                 maxLines: 1,
                 overflow:TextOverflow.ellipsis
             ),
+
+
+
+                IconButton(
+              icon: Icon(FontAwesomeIcons.pencilAlt,
+                color: hexToColor("#6ae7a7"),
+              ),
+                  onPressed: () async{
+
+                    final result = await Navigator.push(
+                        context,
+                        // Create the SelectionScreen in the next step.
+                        MaterialPageRoute(builder: (context) => UpdateAddress()));
+                  if(result=="Updated"){
+                    setState(() {
+                     loadInitialAddress();
+
+
+                    });
+                    }
+                  else{
+                    setState(() {
+                      loadInitialAddress();
+
+                    });
+                    }
+
+                  },
+                ),
+
+
+
+
             //Delivery Address Secion
           ],
         ),
@@ -182,7 +242,7 @@ class _OrderSummaryState extends State<OrderSummary> {
 
             Text(
 
-                "Deepesh Malviya",
+                fullName,
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.w300,
@@ -213,7 +273,7 @@ class _OrderSummaryState extends State<OrderSummary> {
             Expanded(
               child: Text(
 
-                  "B-201 Regalia Residency,\nPune-Mumbai highway,Bavdhan Pune 411021",
+                  deliveryAddress,
                   textAlign: TextAlign.right,
                   style: TextStyle(
                     fontSize: 18,
@@ -246,7 +306,7 @@ class _OrderSummaryState extends State<OrderSummary> {
 
             Text(
 
-                "7774043339",
+                contactNumber,
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.w300,
@@ -343,17 +403,18 @@ class _OrderSummaryState extends State<OrderSummary> {
 
             ),
           ),
-          Ink(
-            decoration: BoxDecoration(
-                gradient: linearGradient,
-                borderRadius:
-                BorderRadius.circular(
-                    30.0)),
+          InkWell(
+
             child: Container(
               constraints: BoxConstraints(
                   maxWidth: 250.0,
                   minHeight: 55.0),
               alignment: Alignment.center,
+              decoration: BoxDecoration(
+                  gradient: linearGradient,
+                  borderRadius:
+                  BorderRadius.circular(
+                      30.0)),
 
               child: Text(
                 "Place Order",
@@ -362,6 +423,8 @@ class _OrderSummaryState extends State<OrderSummary> {
                     color: Colors.white),
               ),
             ),
+
+
           ),
           SizedBox(height: 10,)
         ],

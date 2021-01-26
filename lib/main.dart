@@ -1,3 +1,4 @@
+import 'package:e_commerce_dashboard/app/models/AddressModel.dart';
 import 'package:e_commerce_dashboard/app/models/ProductDetailsModel.dart';
 import 'package:flutter/material.dart';
 
@@ -11,6 +12,7 @@ class MyApp extends StatefulWidget {
 
 
   static Set<ProductDetailsModel> cartList=Set();
+  static AddressModel deliveryAddress=AddressModel();
   @override
   _MyAppState createState() => _MyAppState();
 }
@@ -22,8 +24,9 @@ class _MyAppState extends State<MyApp> {
         title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-
-          primarySwatch: Colors.blue,
+        
+          primarySwatch: Colors.teal,
+          cursorColor: Colors.teal,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
         initialRoute: '/',

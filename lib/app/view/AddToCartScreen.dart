@@ -312,38 +312,38 @@ class _AddToCartScreenState extends State<AddToCartScreen> {
                     height: 5,
                   ),
 
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
 
-                      InkWell(
+                        InkWell(
 
-                        child: Container(
-                          padding: EdgeInsets.only(right: 15),
-                          decoration: BoxDecoration(
-                            boxShadow: customDarkShadow,
-                            borderRadius: BorderRadius.all(Radius.circular(10)),
-                            color: Colors.limeAccent
+                          child: Container(
+                            padding: EdgeInsets.only(right: 15),
+                            decoration: BoxDecoration(
+                              boxShadow: customDarkShadow,
+                              borderRadius: BorderRadius.all(Radius.circular(10)),
+                              color: Colors.limeAccent
+                            ),
+
+
+                            child: Row(
+                              children: [
+                                IconButton(icon: Icon(Icons.shopping_cart,size: 32,color: hexToColor("#15bf9e"),),tooltip: "Checkout", onPressed: (){
+                                }),
+                                Text("CheckOut",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w600),)
+                              ],
+                            ),
                           ),
+                          onTap: (){
+                            Navigator.of(context).pushNamed("/order_summary");
 
+                          },
 
-                          child: Row(
-                            children: [
-                              IconButton(icon: Icon(Icons.shopping_cart,size: 32,color: hexToColor("#15bf9e"),),tooltip: "Checkout", onPressed: (){
-                              }),
-                              Text("CheckOut",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w600),)
-                            ],
-                          ),
                         ),
-                        onTap: (){
-                          Navigator.of(context).pushNamed("/order_summary");
-
-                        },
-
-                      ),
-                    ],
-                  )
+                      ],
+                    )
 
 
                 ],
